@@ -5,3 +5,7 @@ Super simple angularjs, requirejs, gulpjs seed that uses jade and coffeescript a
 ##install
 
 	
+1. Clone the repo
+2. run npm install
+3. run bower install
+4. run gulp
