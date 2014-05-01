@@ -1,5 +1,5 @@
-define ['angular', 'app', 'quotes'], (angular, app)->
-	return angular.module('app.controllers', ['app.quotes'])
+define ['angular', 'app', 'factories'], (angular, app)->
+	return angular.module('app.controllers', ['app.factories'])
 		.controller("QuoteCtrl", ($scope, $location, $routeParams, quotes) ->
 			$scope.quotes = quotes
 			return

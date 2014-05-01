@@ -4,9 +4,8 @@ require.config
 		angular: '../vendor/angular/angular.min'
 		angularResource: '../vendor/angular-resource/angular-resource.min'
 		angularRoute: '../vendor/angular-route/angular-route.min'
-		quote: 'directives/quote/quote'
-		quotes: 'factories/quotes'
-		app: 'app'
+		directives: 'directives/directives'
+		factories: 'factories/factories'
 	shim:
 		"angular":
 			exports: "angular"

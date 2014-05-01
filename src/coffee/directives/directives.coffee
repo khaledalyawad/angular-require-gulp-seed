@@ -1,5 +1,5 @@
 define ['angular'], (angular)->
-	angular.module('quote', [])
+	angular.module('app.directives', [])
 		.directive 'quote', ()->
 			return {
 				restrict: 'E'
