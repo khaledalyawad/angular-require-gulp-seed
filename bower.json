@@ -1,0 +1,11 @@
+{
+  "name": "angular-require-gulp-seed",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "latest",
+    "angular": "latest",
+    "angular-resource": "~1.2.16",
+    "angular-route": "latest",
+    "requirejs": "latest"
+  }
+}

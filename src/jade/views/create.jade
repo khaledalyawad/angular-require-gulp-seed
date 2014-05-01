@@ -1,0 +1,20 @@
+.quote-create
+	.creation
+		.quote-input
+			form(name="quoteCreation")
+				.group(ng-class = "{error: quoteCreation.author.$invalid && !quoteCreation.author.$pristine}")
+					label author name:
+					input(type = "text", name = "author", ng-model = "quote.author", placeholder = "enter author name.", required)
+					span.help-inline(ng-show="quoteCreation.author.$error.required && !quoteCreation.author.$pristine", required) Required author name!
+				.group(ng-class = "{error: quoteCreation.quote.$invalid && !quoteCreation.quote.$pristine}")
+					label quote:
+					input(type = "text", name="quote", ng-model = 'quote.content', placeholder = "enter quote.", required)
+					span.help-inline(ng-show="quoteCreation.quote.$error.required && !quoteCreation.quote.$pristine", required) Required quote!
+				.preview
+					label preview.
+					.quote.center
+						p.quote-content "{{quote.content}}"
+						p.quote-author {{quote.author}}
+				.controls.center
+					a.btn.btn-primary(ng-click = "add()", ng-disabled="quoteCreation.$invalid") add.
+					a.btn.btn-default(href = "#/") cancel.
