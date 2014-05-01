@@ -5,6 +5,8 @@ require.config
 		angularResource: '../vendor/angular-resource/angular-resource.min'
 		angularRoute: '../vendor/angular-route/angular-route.min'
 		quote: 'directives/quote/quote'
+		quotes: 'factories/quotes'
+		app: 'app'
 	shim:
 		"angular":
 			exports: "angular"
@@ -17,7 +19,7 @@ require.config
 
 window.name = "NG_DEFER_BOOTSTRAP!"
 
-require ['angular','angularResource', 'angularRoute', 'app'], (angular, angularResource, angularRoute, app)->
+require ['angular', 'app', 'routes'], (angular, app, routes)->
 
 	$body = angular.element document.getElementsByTagName('body')[0]
 	# important that 'name' matches the name given in your ng-app attribute.
